@@ -1,9 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import "bulma/css/bulma.css";
+import API from "../helpers/API";
 
-export default function Card() {
-  console.log(restaurantArray);
-  const listOfRestaurants = restaurantArray.map((listItems, index) => {
+export default function Card(props) {
+  console.log(props);
+
+  /* const listOfRestaurants = restaurantArray.map((listItems, index) => {
     console.log(listItems);
 
     const itemsObject = restaurantArray[index].items.map(
@@ -48,11 +50,11 @@ export default function Card() {
     );
 
     return itemsObject;
-  });
+  }); */
 
   return (
     <section className="card__list">
-      <div className="card__item">{listOfRestaurants}</div>
+      <div className="card__item">{/* {listOfRestaurants} */}</div>
     </section>
   );
 }
