@@ -1,1 +1,60 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "NotoSerif";
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.top-container {
+  height: 6.5vh;
+}
+
+.top-container .nav-item {
+  font-size: 1.25rem;
+  color: #00a2c0;
+}
+
+.slide-container img {
+  height: 33.1vh !important;
+}
+
+.slide-container .title {
+  width: 5rem !important;
+  position: absolute;
+  color: white;
+  z-index: 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 20vh;
+  left: 50%;
+  margin-left: -4.5em;
+}
+
+.slide-container .title p, .slide-container .title h2 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slide-container .title p {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.slide-container .title h2 {
+  font-size: 3rem;
+}
+/*# sourceMappingURL=main.css.map */

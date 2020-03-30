@@ -1,13 +1,11 @@
 import React from "react";
 import "./styles/main.css";
-import Card from "./components/Card";
-import Main from "./components/Main";
+import Home from "./components/Home"
 
 function App() {
   return (
     <div className="App">
-      <Card />
-      <Main />
+      <Home />
     </div>
   );
 }

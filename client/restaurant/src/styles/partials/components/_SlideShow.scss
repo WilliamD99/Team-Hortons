@@ -1,0 +1,26 @@
+.slide-container {
+    img {
+        height: 33.1vh !important;
+    }
+    .title {
+        width: 5rem !important;
+        position: absolute;
+        color:white;
+        z-index: 2;
+        flex-direction: column;
+        align-items: center;
+        top: 20vh;
+        left: 50%;
+        margin-left: -4.5em;
+        p, h2 {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        };
+        p {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}
