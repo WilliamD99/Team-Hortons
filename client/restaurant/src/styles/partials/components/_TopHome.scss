@@ -1,0 +1,47 @@
+.top-container {
+    flex-direction: column;
+    align-items: center;
+    .title {
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        p {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: #212b36;
+        }
+        a {
+            font-size: 0.75rem;
+            color: #b7b2b2;
+        }
+    }
+    &__contents {
+        width: 80%;
+        &--restaurant-ava {
+            width: 6rem;
+            height: 4rem;
+        }
+        &--restaurant-name {
+            font-weight: bold;
+        }
+    }
+    .stars, .money {
+        display: flex;
+        flex-direction: column;
+    }
+    .stars {
+        .MuiRating-icon {
+            font-size: 1.1rem;
+        }
+    }
+    .money {
+        .MuiRating-icon {
+            font-size: 1rem;
+            margin-right: -0.3rem;
+        }
+        .MuiRating-iconFilled {
+            color:#2de33d
+        }
+    }
+
+}

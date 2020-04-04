@@ -1,0 +1,137 @@
+[
+    {
+        "id": "18384115",
+        "name": "Caterspoint",
+        "res_id": 18384115,
+        "image": "https://b.zmtcdn.com/data/pictures/5/18384115/a2883e7a966a37cec51ea673207a7a13_featured_v2.jpg",
+        "price_range": 2,
+        "rating": {
+            "aggregate_rating": "4.9",
+            "rating_text": "Excellent",
+            "rating_color": "3F7E00",
+            "votes": "223"
+        },
+        "cuisines": "Mexican, American, Healthy Food",
+        "has_online_delivery": 1,
+        "has_table_booking": 0,
+        "location": {
+            "address": "S-27/11, DLF Phase 3, Gurgaon",
+            "locality": "DLF Phase 3",
+            "city": "Gurgaon",
+            "city_id": 1,
+            "latitude": "28.4872636000",
+            "longitude": "77.1039737000",
+            "zipcode": "",
+            "country_id": 1,
+            "locality_verbose": "DLF Phase 3, Gurgaon"
+        }
+    },
+    {
+        "id": "800089",
+        "name": "Barbeque Nation",
+        "res_id": 800089,
+        "image": "https://b.zmtcdn.com/data/pictures/9/800089/0811509c1a8ee814e99e1d9184aab720_featured_v2.jpg",
+        "price_range": 4,
+        "rating": {
+            "rating_text": "Excellent",
+            "rating_color": "3F7E00",
+            "votes": "1069",
+            "aggregate_rating": "4.7"
+        },
+        "cuisines": "North Indian",
+        "has_online_delivery": 0,
+        "has_table_booking": 0,
+        "location": {
+            "latitude": "26.8530070000",
+            "address": "3rd Floor, Riverside Mall, Vipin Khand, Gomti Nagar, Lucknow",
+            "city": "Lucknow",
+            "country_id": 1,
+            "locality_verbose": "Riverside Mall, Gomti Nagar, Lucknow",
+            "city_id": 8,
+            "zipcode": "0",
+            "longitude": "80.9731850000",
+            "locality": "Riverside Mall, Gomti Nagar"
+        }
+    },
+    {
+        "id": "56618",
+        "name": "AB's - Absolute Barbecues",
+        "res_id": 56618,
+        "image": "https://b.zmtcdn.com/data/pictures/chains/8/56618/bcf6a23c6fc2a84a36d55e99297607a5_featured_v2.jpg",
+        "price_range": 3,
+        "rating": {
+            "rating_text": "Excellent",
+            "rating_color": "3F7E00",
+            "votes": "6907",
+            "aggregate_rating": "4.6"
+        },
+        "cuisines": "European, Mediterranean, North Indian",
+        "has_online_delivery": 0,
+        "has_table_booking": 0,
+        "location": {
+            "latitude": "12.9499339564",
+            "address": "90/4, 3rd Floor, Outer Ring Road, Munnekollaly Village, Marathahalli, Bangalore",
+            "city": "Bangalore",
+            "country_id": 1,
+            "locality_verbose": "Marathahalli, Bangalore",
+            "city_id": 4,
+            "zipcode": "",
+            "longitude": "77.6993861049",
+            "locality": "Marathahalli"
+        }
+    },
+    {
+        "id": "25570",
+        "name": "Barbeque Nation",
+        "res_id": 25570,
+        "image": "https://b.zmtcdn.com/data/pictures/chains/2/20842/b53d903894e2fe2e49ca0e8671e40546_featured_v2.jpg",
+        "price_range": 3,
+        "rating": {
+            "rating_text": "Excellent",
+            "rating_color": "3F7E00",
+            "votes": "1753",
+            "aggregate_rating": "4.9"
+        },
+        "cuisines": "North Indian, Chinese",
+        "has_online_delivery": 0,
+        "has_table_booking": 0,
+        "location": {
+            "latitude": "22.5510837417",
+            "address": "24, 1st Floor, Park Center Building, Park Street Area, Kolkata",
+            "city": "Kolkata",
+            "country_id": 1,
+            "locality_verbose": "Park Street Area, Kolkata",
+            "city_id": 2,
+            "zipcode": "",
+            "longitude": "88.3541271463",
+            "locality": "Park Street Area"
+        }
+    },
+    {
+        "id": "18452864",
+        "name": "AB's - Absolute Barbecues",
+        "res_id": 18452864,
+        "image": "https://b.zmtcdn.com/data/pictures/chains/6/94286/03f9b486fce584ca7aab33b1435334f2_featured_v2.jpg",
+        "price_range": 3,
+        "rating": {
+            "rating_text": "Excellent",
+            "rating_color": "3F7E00",
+            "votes": "200",
+            "aggregate_rating": "4.9"
+        },
+        "cuisines": "European, Mediterranean, North Indian",
+        "has_online_delivery": 0,
+        "has_table_booking": 0,
+        "location": {
+            "latitude": "17.4123304512",
+            "address": "No. 8-2-618/10-11,2nd Floor, Krishe Amethyst, Road No.1, Banjara Hills, Hyderabad",
+            "city": "Hyderabad",
+            "country_id": 1,
+            "locality_verbose": "Banjara Hills, Hyderabad",
+            "city_id": 6,
+            "zipcode": "",
+            "longitude": "78.4496539459",
+            "locality": "Banjara Hills"
+        }
+    }
+]

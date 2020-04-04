@@ -3,15 +3,16 @@
         height: 33.1vh !important;
     }
     .title {
-        width: 5rem !important;
         position: absolute;
+        width: 10rem;
         color:white;
         z-index: 2;
         flex-direction: column;
         align-items: center;
-        top: 20vh;
+        text-align: center;
+        top: 18vh;
         left: 50%;
-        margin-left: -4.5em;
+        margin-left: -5rem;
         p, h2 {
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         };

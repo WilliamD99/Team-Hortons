@@ -17,16 +17,14 @@ export default function SlideShow() {
 
     return (
         <div className="slide-container mt-2">
-            <div className="title nav justify-content-center">
+            <div className="title">
                 <p>BEST OF</p>
                 <h2>INDIA</h2>
             </div>
             <Zoom {...zoomOutProperties}>
                 {
                     images.map((each, index) =>
-                        <>
-                            <img key={index} style={{ width: "100%" }} src={each} />
-                        </>
+                        <img key={index} style={{ width: "100%" }} src={each} alt="slideshow" />
                     )
                 }
             </Zoom>

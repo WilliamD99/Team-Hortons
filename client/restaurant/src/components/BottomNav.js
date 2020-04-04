@@ -10,6 +10,7 @@ const useStyles = makeStyles({
         width: "100%",
         position: "fixed",
         bottom: 0,
+        zIndex: 100
     },
 });
 
@@ -22,7 +23,7 @@ export default function BottomNav() {
     };
     return (
         <BottomNavigation value={value} onChange={handleChange} showLabels className={classes.root}>
-            <BottomNavigationAction label="Home" icon={<HomeIcon />} />
+            <BottomNavigationAction label="Home" icon={<HomeIcon />} selected />
             <BottomNavigationAction label="Search by Price" icon={<AttachMoneyIcon />} />
             <BottomNavigationAction label="Explore" icon={<LocationOnIcon />} />
         </BottomNavigation>
