@@ -1,0 +1,18 @@
+.price-container {
+    display: flex;
+    justify-content: center;
+    .MuiTabs-flexContainer {
+        .MuiPaper-root {
+            background-color: #2ba0bc !important;
+            .MuiTab-wrapper {
+                display: flex;
+                flex-direction: row;
+                .MuiSvgIcon-root {
+                    color: white;
+                    font-size: 1.4rem;
+                    margin-right: -0.5rem;
+                }
+            }
+        }
+    }
+}

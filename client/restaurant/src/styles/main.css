@@ -131,4 +131,44 @@ body {
 .top-container .money .MuiRating-iconFilled {
   color: #2de33d;
 }
+
+.MuiBottomNavigation-root {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+
+.MuiBottomNavigation-root .Mui-selected {
+  text-decoration: none;
+}
+
+.price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price-container .MuiTabs-flexContainer .MuiPaper-root {
+  background-color: #2ba0bc !important;
+}
+
+.price-container .MuiTabs-flexContainer .MuiPaper-root .MuiTab-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.price-container .MuiTabs-flexContainer .MuiPaper-root .MuiTab-wrapper .MuiSvgIcon-root {
+  color: white;
+  font-size: 1.4rem;
+  margin-right: -0.5rem;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Rating from "@material-ui/lab/Rating";
-import { makeStyles } from "@material-ui/core/styles"
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import { Icon, InputGroup, Input } from "rsuite"
+import SlideShow from "./SlideShow"
 
 export default class TopHome extends Component {
     constructor(props) {
@@ -24,7 +24,7 @@ export default class TopHome extends Component {
             <div className="ml-3 align-self-center">
                 <p className="top-container__contents--restaurant-name">{content.name}</p>
                 <div className="stars">
-                    <Rating name="half-rating-read" defaultValue={parseInt(content.rating.aggregate_rating)} precision={0.1} size="small" readOnly />
+                    <Rating name="half-rating-read" defaultValue={content.rating.aggregate_rating} precision={0.1} size="small" readOnly />
                 </div>
                 <div className="money mt-1">
                     <Rating name="customized-color" defaultValue={parseInt(content.price_range)} precision={1} icon={<AttachMoneyIcon fontSize="inherit" size="small" readOnly />} />
@@ -35,6 +35,7 @@ export default class TopHome extends Component {
     render() {
         return (
             <>
+                <SlideShow />
                 <div className="search-container d-flex justify-content-center">
                     <InputGroup className="search-bar mt-3 ">
                         <Input placeholder="Search ..." onChange={this.searchBar} />
