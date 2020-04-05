@@ -18,7 +18,7 @@ export default class BottomNav extends Component {
         this.setState({ value });
     };
 
-    componentWillReceiveProps(newProps) {
+    UNSAFE_componentWillReceiveProps(newProps) {
         const { pathname } = newProps.location;
         const { pathMap } = this.state;
 
