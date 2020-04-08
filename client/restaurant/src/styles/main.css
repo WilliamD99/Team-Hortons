@@ -109,7 +109,11 @@ body {
   font-weight: bold;
 }
 
-.top-container .stars, .top-container .money {
+.top-container .top-container__contents:last-child {
+  padding-bottom: 4rem !important;
+}
+
+.stars, .money {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,16 +123,16 @@ body {
           flex-direction: column;
 }
 
-.top-container .stars .MuiRating-icon {
+.stars .MuiRating-icon {
   font-size: 1.1rem;
 }
 
-.top-container .money .MuiRating-icon {
+.money .MuiRating-icon {
   font-size: 1rem;
   margin-right: -0.3rem;
 }
 
-.top-container .money .MuiRating-iconFilled {
+.money .MuiRating-iconFilled {
   color: #2de33d;
 }
 
@@ -187,5 +191,52 @@ body {
 
 .price-title {
   margin-left: 5vw;
+}
+
+.MuiPagination-root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 4.5rem !important;
+}
+
+.range-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.range-container .details {
+  width: 50%;
+}
+
+.range-container .top-container__contents {
+  margin-left: 5vw !important;
+  width: 100%;
+}
+
+.range-container .top-container__contents .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.range-container .top-container__contents .option .yes {
+  color: green;
+}
+
+.range-container .top-container__contents .option .MuiSvgIcon-root {
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */

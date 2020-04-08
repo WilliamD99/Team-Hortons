@@ -31,3 +31,29 @@
 .price-title {
     margin-left: 5vw
 }
+.MuiPagination-root {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4.5rem !important;
+}
+.range-container {
+    display: flex;
+    flex-direction: column;
+    .details {
+        width: 50%
+    }
+    .top-container__contents {  
+        margin-left: 5vw !important;
+        width: 100%;
+        .option {
+            display: flex;
+            flex-direction: row;
+            .yes {
+                    color: green
+            }
+            .MuiSvgIcon-root {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

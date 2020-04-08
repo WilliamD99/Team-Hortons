@@ -25,23 +25,25 @@
             font-weight: bold;
         }
     }
-    .stars, .money {
-        display: flex;
-        flex-direction: column;
+    .top-container__contents:last-child {
+        padding-bottom: 4rem !important;
     }
-    .stars {
-        .MuiRating-icon {
-            font-size: 1.1rem;
-        }
+}
+.stars, .money {
+    display: flex;
+    flex-direction: column;
+}
+.stars {
+    .MuiRating-icon {
+        font-size: 1.1rem;
     }
-    .money {
-        .MuiRating-icon {
-            font-size: 1rem;
-            margin-right: -0.3rem;
-        }
-        .MuiRating-iconFilled {
-            color:#2de33d
-        }
+}
+.money {
+    .MuiRating-icon {
+        font-size: 1rem;
+        margin-right: -0.3rem;
     }
-
+    .MuiRating-iconFilled {
+        color:#2de33d
+    }
 }

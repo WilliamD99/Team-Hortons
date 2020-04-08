@@ -35,7 +35,7 @@ export default class BottomNav extends Component {
         return (
             <BottomNavigation value={value} onChange={this.handleChange} showLabels>
                 <BottomNavigationAction label="Home" icon={<HomeIcon />} component={Link} to={pathMap[0]} />
-                <BottomNavigationAction label="Search by Price" icon={<AttachMoneyIcon />} component={Link} to={pathMap[1]} />
+                <BottomNavigationAction label="Restaurants" icon={<AttachMoneyIcon />} component={Link} to={pathMap[1]} />
                 <BottomNavigationAction label="Explore" icon={<LocationOnIcon />} component={Link} to={pathMap[2]} />
             </BottomNavigation>
         )
