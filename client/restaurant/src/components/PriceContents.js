@@ -8,7 +8,6 @@ const renderTab = tabItemData => (
 );
 
 export default function PriceContents({ tabs, selectedTab, onChange, length, pagination, data }) {
-    console.log(data)
     return (
         <>
             <div className="tabs-container mt-3">
