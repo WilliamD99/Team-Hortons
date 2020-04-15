@@ -1,55 +1,26 @@
 import React, { Component } from 'react'
-import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
+import { withGoogleMap, GoogleMap, Marker, withScriptjs } from "react-google-maps"
 
-const mapStyles = {
-    width: '100%',
-    height: '100%'
-};
-
-export class MapContainer extends Component {
-    state = {
-        showingInfoWindow: false,  //Hides or the shows the infoWindow
-        activeMarker: {},          //Shows the active marker upon click
-        selectedPlace: {}          //Shows the infoWindow to the selected place upon a marker
-    };
-    onMarkerClick = (props, marker, e) =>
-        this.setState({
-            selectedPlace: props,
-            activeMarker: marker,
-            showingInfoWindow: true
-        });
-
-    onClose = props => {
-        if (this.state.showingInfoWindow) {
-            this.setState({
-                showingInfoWindow: false,
-                activeMarker: null
-            });
-        }
-    };
+export default class Explore extends Component {
     render() {
+        const GoogleMapExample = withScriptjs(withGoogleMap(props => (
+            <GoogleMap
+                defaultCenter={{ lat: 40.756795, lng: -73.954298 }}
+                defaultZoom={13}
+            >
+                {props.isMarkerShown && <><Marker position={{ lat: -34.397, lng: 150.644 }} /><Marker position={{ lat: -50.397, lng: 150.644 }} /></>}
+            </GoogleMap>
+        )));
         return (
-            <Map google={this.props.google}
-                style={{ width: '100%', height: '100%', position: 'relative' }}
-                className={'map'}
-                zoom={14}>
-                <Marker
-                    title={'The marker`s title will appear as a tooltip.'}
-                    name={'SOMA'}
-                    position={{ lat: 37.778519, lng: -122.405640 }} />
-                <Marker
-                    name={'Dolores park'}
-                    position={{ lat: 37.759703, lng: -122.428093 }} />
-                <Marker />
-                <Marker
-                    name={'Your position'}
-                    position={{ lat: 37.762391, lng: -122.439192 }}
+            <div className="mt-3">
+                <GoogleMapExample
+                    containerElement={<div style={{ height: `500px`, width: '500px' }} />}
+                    mapElement={<div style={{ height: `100%` }} />}
+                    googleMapURL="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCZVJCN9TzYqSwQ_KBRX1d0C1h54abwg-0"
+                    loadingElement={<div style={{ height: `100%`, width: `100%` }} />}
+                    isMarkerShown
                 />
-            </Map>
-        );
+            </div>
+        )
     }
 }
-
-export default GoogleApiWrapper({
-    apiKey: 'AIzaSyCZVJCN9TzYqSwQ_KBRX1d0C1h54abwg-0'
-})(MapContainer);
