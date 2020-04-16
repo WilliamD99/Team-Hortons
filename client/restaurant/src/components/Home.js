@@ -4,7 +4,7 @@ import BottomNav from "./BottomNav"
 import TopHome from "./TopHome";
 import api from "../helpers/API";
 import Price from "./Price";
-import Explore from "./Explore";
+import Explore from "./ExploreContainer";
 import { Switch, Route, Redirect, BrowserRouter as Router } from "react-router-dom"
 import axios from "axios"
 import chunks from "../helpers/chunks"
@@ -44,8 +44,7 @@ export default class Home extends Component {
                             <Redirect from="/home" to="/" />
                             <Route path="/" render={() => (<TopHome data={this.state.favorites} />)} exact />
                             <Route path="/price" render={() => (<Price range1={this.state.range1} range2={this.state.range2} range3={this.state.range3} range4={this.state.range4} />)} />
-                            <Route path="/explore" render={() => (<Explore />)} />
-
+                            <Route path="/explore" render={() => (<Explore range1={this.state.range1} range2={this.state.range2} range3={this.state.range3} range4={this.state.range4} />)} />
                         </Switch>
                         <BottomNav selectPage={this.selectPage} />
                     </Router>

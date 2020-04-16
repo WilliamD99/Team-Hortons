@@ -239,4 +239,10 @@ body {
 .range-container .top-container__contents .option .MuiSvgIcon-root {
   font-size: 1.2rem;
 }
+
+.map {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
 /*# sourceMappingURL=main.css.map */
