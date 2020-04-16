@@ -73,6 +73,9 @@ export class ExploreMap extends Component {
                                     {this.state.selectedPlace.name}
                                 </Typography>
                                 <Rating name="half-rating-read" defaultValue={this.state.selectedPlace.rating} precision={0.1} size="small" readOnly />
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    <strong>Cuisines</strong>: {this.state.selectedPlace.cuisines}
+                                </Typography>
                             </CardContent>
                         </Card>
                     </InfoWindow>
