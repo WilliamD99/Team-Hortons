@@ -22,7 +22,7 @@ export default function Range({ data }) {
         return (
             <div key={index} className="top-container__contents row mb-3">
                 <div className="align-self-center">
-                    <img className="top-container__contents--restaurant-ava rounded" src={img} />
+                    <img alt="avatar" className="top-container__contents--restaurant-ava rounded" src={img} />
                 </div>
                 <div className="ml-3 align-self-center details">
                     <p className="top-container__contents--restaurant-name">{content.name}</p>

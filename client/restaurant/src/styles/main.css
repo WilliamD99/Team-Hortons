@@ -249,4 +249,12 @@ body {
 .gm-style-iw-d {
   width: 50vw;
 }
+
+.MuiTypography-name {
+  font-size: 1.25rem !important;
+}
+
+.MuiCardMedia-root {
+  height: 20vh !important;
+}
 /*# sourceMappingURL=main.css.map */

@@ -8,15 +8,11 @@ const renderTab = tabItemData => (
 );
 
 export class ExploreMap extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            activeMarker: {},
-            selectedPlace: {},
-            showingInfoWindow: false
-        }
+    state = {
+        activeMarker: {},
+        selectedPlace: {},
+        showingInfoWindow: false
     }
-
     onMarkerClick = (props, marker) =>
         this.setState({
             activeMarker: marker,
@@ -40,7 +36,7 @@ export class ExploreMap extends Component {
 
     render() {
         let markers = this.props.data.map((marker, index) => (
-            <Marker key={index} name={marker.name} image={marker.image} cuisines={marker.cuisines} rating={marker.rating.aggregate_rating} onClick={this.onMarkerClick} position={{ lat: marker.location.latitude, lng: marker.location.longitude }} />
+            <Marker icon={"http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"} key={index} name={marker.name} image={marker.image} cuisines={marker.cuisines} rating={marker.rating.aggregate_rating} onClick={this.onMarkerClick} position={{ lat: marker.location.latitude, lng: marker.location.longitude }} />
         ))
         return (
             <>
@@ -67,9 +63,9 @@ export class ExploreMap extends Component {
                         onClose={this.onInfoWindowClose}
                         visible={this.state.showingInfoWindow}>
                         <Card>
-                            <CardMedia component="img" alt="restaurant img" src={this.state.selectedPlace.image} />
+                            <CardMedia className="img-fluid" component="img" alt="restaurant img" src={this.state.selectedPlace.image} />
                             <CardContent>
-                                <Typography gutterBottom variant="h5" component="h4">
+                                <Typography gutterBottom variant="h5" component="p" className="MuiTypography-name">
                                     {this.state.selectedPlace.name}
                                 </Typography>
                                 <Rating name="half-rating-read" defaultValue={this.state.selectedPlace.rating} precision={0.1} size="small" readOnly />
